@@ -51,6 +51,18 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <includes>
+                                <include>praktikum/Bun.class</include>
+                                <include>praktikum/Burger.class</include>
+                                <include>praktikum/Ingredient.class</include>
+                                <include>praktikum/IngredientType.class</include>
+                            </includes>
+                            <excludes>
+                                <exclude>praktikum/Database.class</exclude>
+                                <exclude>praktikum/Praktikum.class</exclude>
+                            </excludes>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
