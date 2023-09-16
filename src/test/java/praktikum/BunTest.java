@@ -32,14 +32,14 @@ public class BunTest {
     }
 
     @Test
-    public void checkGetNameReturnsName() {
+    public void checkGetNameMethodReturnsName() {
         String actualResult = bun.getName();
 
         assertEquals("Неправильное имя булочки", name, actualResult);
     }
 
     @Test
-    public void checkGetPriceReturnsPrice() {
+    public void checkGetPriceMethodReturnsPrice() {
         float actualResult = bun.getPrice();
 
         assertEquals("Неправильная цена булочки", price, actualResult, 0);

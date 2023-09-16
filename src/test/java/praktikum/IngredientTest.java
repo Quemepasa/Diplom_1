@@ -36,21 +36,21 @@ public class IngredientTest {
     }
 
     @Test
-    public void checkGetNameReturnsName() {
+    public void checkGetNameMethodReturnsName() {
         String actualResult = ingredient.getName();
 
         assertEquals("Неправильный имя ингредиента", name, actualResult);
     }
 
     @Test
-    public void checkGetPriceReturnsPrice() {
+    public void checkGetPriceMethodReturnsPrice() {
         float actualResult = ingredient.getPrice();
 
         assertEquals("Неправильный цена ингредиента", price, actualResult, 0);
     }
 
     @Test
-    public void checkGetTypeReturnsIngredientType() {
+    public void checkGetTypeMethodReturnsIngredientType() {
         IngredientType actualResult = ingredient.getType();
 
         assertEquals("Неправильный тип ингредиента", ingredientType, actualResult);

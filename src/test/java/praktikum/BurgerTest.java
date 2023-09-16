@@ -15,6 +15,7 @@ public class BurgerTest {
 
     private final static int EMPTY_LIST = 0;
     private final  static int FIRST_ELEMENT_OF_LIST = 0;
+    private final  static int SECOND_ELEMENT_OF_LIST = 1;
     private final static float EXPECTED_PRICE = 2141.3F;
 
     @Before
@@ -44,13 +45,13 @@ public class BurgerTest {
     public void checkMoveIngredientMethodMovesIngredientInList() {
         burger.addIngredient(sauce);
         burger.addIngredient(filling);
-        burger.moveIngredient(1, FIRST_ELEMENT_OF_LIST);
+        burger.moveIngredient(SECOND_ELEMENT_OF_LIST, FIRST_ELEMENT_OF_LIST);
 
         assertEquals(filling, burger.ingredients.get(FIRST_ELEMENT_OF_LIST));
     }
 
     @Test
-    public void checkGetPriceReturnsPrice() {
+    public void checkGetPriceMethodReturnsPrice() {
         burger.setBuns(bun);
         burger.addIngredient(sauce);
         burger.addIngredient(filling);
@@ -61,7 +62,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void checkGetReceiptReturnsReceipt() {
+    public void checkGetReceiptMethodReturnsReceipt() {
         burger.setBuns(bun);
         burger.addIngredient(sauce);
         burger.addIngredient(filling);
